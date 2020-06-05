@@ -5,7 +5,7 @@ var fileLocation  = prompt("Please enter the file location of your Pokemon list"
 
 var data = fs.readFileSync(fileLocation);
   
-var PokemonList = data.toString().split("\n").map(pokemon => pokemon.toLowerCase())
+var PokemonList = data.toString().split("\n").map(pokemon => pokemon.toLowerCase());
 
 
 for(pokemon in PokemonList){
